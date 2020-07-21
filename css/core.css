@@ -50,6 +50,7 @@ nav a {
 }
 
 blockquote {
+	margin: 2em;
 	padding: 2em;
 	font-weight: bolder;
 	font-style: italic;
