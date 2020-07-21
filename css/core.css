@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans&display=swap');
+body {
+	font-family: 'Open Sans';
+	margin: 0;
+	color: #333;
+}
+
+header {
+	font-family: 'Comfortaa';
+}
+
+header h1 {
+	background-image: url("../images/logo.png");
+	background-size: 2.5em;
+	background-repeat: no-repeat;
+	padding: .25em 1em .25em 3em;
+	background-position: 0.25em;
+}
+
+nav {
+	font-family: 'Comfortaa';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	min-height: 100%;
+	box-sizing: border-box;
+	padding: 2.5em 1em;
+	z-index: 2;
+	opacity: 0;
+	transition: opacity 0.5s;
+	display: flex;
+	flex-direction: column;
+	background-color: hsla(0, 0%, 10%, 0.9)
+}
+
+nav.open {
+	opacity: 1;
+}
+
+nav a {
+	padding: 0.5em;
+	text-decoration: none;
+	color: white;
+	font-size: 1.4em;
+	border-radius: 2px;
+}
+
+
+.menu {
+	font-size: 1.5em;
+	text-align: right;
+	padding: 0.25em 0.5em;
+	position: absolute;
+	top: 0;
+	z-index: 20;
+	right: 0;
+	width: 100%;
+}
+
+nav.open + .menu {
+	color: white;
+}
+
+p {
+	padding: 0 0.25em;
+	text-align: justify;
+}
+
+img {
+	width: 100%;
+	align-self: start;
+}
+
+section {
+	display: none;
+}
+
+section.current {
+	display: block;
+}
+
+footer {
+	font-size: 0.8em;
+	margin-top: 5em;
+	border-top: 1px dotted black;
+}
+
+footer p {
+	margin-top: 0;
+}
+
+pre {
+	font-family: "Open Sans";
+}
+
+
+
+@media screen and (min-width: 425px) {
+
+	body {
+		max-width: 800px;
+		margin: auto;
+		padding: 0.75em;
+	}
+
+	header h1 {
+		font-size: 1.8em;
+		background-size: 2.5em;
+		padding: .75em 1em .75em 3em;
+	}
+
+	p {
+		padding: 0;
+	}
+
+	img {
+		border-radius: 2px;
+	}
+
+}
+
+@media screen and (min-width: 650px) {
+	section.current {
+		display: flex;
+		flex-direction: column;
+	}
+	.row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	img {
+		width: 280px;
+		margin-right: 1em;
+	}
+
+	h2 {
+		margin-top: 0;
+	}
+}
+
+@media screen and (min-width: 725px) {
+	.menu {
+		display: none;
+	}
+
+	nav {
+		opacity: 1;
+		position: static;
+		box-sizing: border-box;
+		padding: 0;
+		z-index: 2;
+		transition: 0.5s;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		background-color: white;
+	}
+
+	nav a {
+		padding: 0.5em;
+		text-decoration: none;
+		color: #666;
+		transition: 0.4s;
+		font-size: 1.0em;
+	}
+
+	nav a:hover {
+		background-color: #ddd;
+	}
+
+	nav a.current {
+		color: black;
+	}
+
+}
