@@ -7,7 +7,7 @@ body {
 	margin: auto;
 }
 
-header {
+header, h1, h2, h3, h4 {
 	font-family: 'Comfortaa';
 }
 
@@ -49,8 +49,13 @@ nav a {
 	border-radius: 2px;
 }
 
+h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
 blockquote {
-	margin: 2em;
+	margin: 2em 1em;
 	padding: 2em;
 	font-weight: bolder;
 	font-style: italic;
