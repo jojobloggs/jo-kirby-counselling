@@ -96,8 +96,6 @@ pre {
 	font-family: "Open Sans";
 }
 
-
-
 @media screen and (min-width: 425px) {
 
 	body {
@@ -124,7 +122,9 @@ pre {
 	section.current {
 		display: flex;
 		flex-direction: column;
+		margin: 0 0.5em;
 	}
+	
 	.row {
 		display: flex;
 		flex-direction: row;
@@ -141,7 +141,7 @@ pre {
 	}
 }
 
-@media screen and (min-width: 725px) {
+@media screen and (min-width: 740px) {
 	.menu {
 		display: none;
 	}
@@ -155,16 +155,14 @@ pre {
 		transition: 0.5s;
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-end;
+		justify-content: space-between;
 		background-color: white;
 	}
 
 	nav a {
-		padding: 0.5em;
-		text-decoration: none;
 		color: #666;
 		transition: 0.4s;
-		font-size: 1.0em;
+		font-size: 1em;
 	}
 
 	nav a:hover {
