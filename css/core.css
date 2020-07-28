@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans&display=swap');
 body {
 	font-family: 'Open Sans';
-	/* margin: 0; */
 	color: #333;
 	max-width: 800px;
 	margin: auto;
@@ -99,6 +98,7 @@ section.current {
 footer {
 	font-size: 0.8em;
 	margin-top: 5em;
+	padding-top: 0.5em;
 	border-top: 1px dotted black;
 }
 
@@ -108,6 +108,11 @@ footer p {
 
 pre {
 	font-family: "Open Sans";
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
 }
 
 @media screen and (min-width: 425px) {
@@ -140,9 +145,12 @@ pre {
 	}
 
 	.row {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: auto 1fr;
+	}
+	.row3 {
+		display: grid;
+		grid-template-columns: auto auto auto;
 	}
 
 	img {
