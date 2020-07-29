@@ -117,6 +117,12 @@ ul.three {
 .flex {
 	display: flex;
 	justify-content: space-between;
+	flex-direction: column;
+}
+
+.flex img {
+	margin: 1em 0;
+	width: 100%;
 }
 
 .red {
@@ -165,13 +171,23 @@ strong {
 		grid-template-columns: auto auto auto;
 	}
 
-	img {
+	.row img {
 		width: 280px;
 		margin-right: 1em;
 	}
 
 	h2 {
 		margin-top: 0;
+	}
+
+	.flex {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.flex img {
+		width: 55%;
+		max-width: 600px;
 	}
 }
 
