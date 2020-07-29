@@ -185,8 +185,12 @@ strong {
 		justify-content: space-between;
 	}
 
-	.flex img {
+	.flex a {
 		width: 55%;
+
+	}
+
+	.flex img {
 		max-width: 600px;
 	}
 }
