@@ -110,9 +110,21 @@ pre {
 	font-family: "Open Sans";
 }
 
+ul.three {
+	columns: 200px 3;
+}
+
 .flex {
 	display: flex;
 	justify-content: space-between;
+}
+
+.red {
+	color: darkred;
+}
+
+strong {
+	text-decoration: underline;
 }
 
 @media screen and (min-width: 425px) {
